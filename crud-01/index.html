@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" action="">
+        <input type="text" name="box-text" id="" >
+        <button type="submit" >enviar</button>
+    </form>
+</body>
+<script>
+    const form = document.querySelector('#form');
+    const dataInput = document.querySelector('input[name="box-text"]');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        console.log(dataInput.value)
+        // console.log(inputValue)
+    })
+    
+    dataInput.value
+    // const posts = {
+    //     post: (e) => {
+    //         e.value
+    //         console.log(e.value)
+    //     }
+    // }
+
+</script>
+</html>
