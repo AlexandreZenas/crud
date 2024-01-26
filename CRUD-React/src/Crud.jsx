@@ -1,12 +1,19 @@
-import './app.css'
+import './App.css'
 
-export default function Crud(){
+ function Crud (){
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
+
     return(
         <>
-            <form action="">
-                <input type="text" name="" id="" />
+            <form action="" onSubmit={handleSubmit}>
+                <input type="text" name="name" id="name" />
                 <button type='submit'>Enviar</button>
             </form>
         </>
     )
 }
+
+export default Crud;
